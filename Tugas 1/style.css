@@ -1,0 +1,41 @@
+/* settingan dasar seluruh halaman */
+body {
+    background-color: lightgray; /* warna latar belakang halaman webnya yaitu abu-abu */
+    font-family: tahoma; /* jenis font/tulisan pada website */
+}
+
+/* bagian Judul/Header */
+header {
+    background-color: rgb(156, 41, 20); /* warna latar belakang header*/
+    color: white; /* tulisan header berwarna putih */
+    text-align: center; /* posisi tulisan header ke tengah halaman web */
+    padding: 20px; /* memberi jarak agar kotak judul besar dan terlihat */
+}
+
+/* bagian Menu (Navigation) */
+nav {
+    background-color: black; /* warna latar belakang navigasi */
+    text-align: center; /*posisi tulisan navigasi ke tengah halaman web */
+    padding: 15px; /*memberi jarak di kotak navigasi */
+}
+
+/* setting jarak dan warna teks link di dalam menu */
+nav a {
+    color: white; /* warna tulisan link di navigasi */
+    margin: 15px; /* jarak antar tulisan menu di navigasi */
+}
+
+/* bagian isi profile mahasiswa (Article) */
+article {
+    background-color: white; /* warna latar belakang bagian artikel */
+    padding: 20px; /* jarak teks dengan batas tepi kotak dalam/backgorund profile */
+    margin: 20px; /* jarak kotak dengan tepi layar luar */
+}
+
+/* bagian Footer */
+footer {
+    background-color: black; /* warna latar belakang footer */
+    color: white; /* warna tulisan footer */
+    text-align: center; /* posisi tulisan footer ke tengah halaman web */
+    padding: 15px; /* memberi jarak di kotak footer */
+}
