@@ -1,0 +1,91 @@
+/* settingan dasar seluruh halaman */
+body {
+    background-color: lightgray; /* warna latar belakang halaman webnya yaitu abu-abu */
+    font-family: tahoma; /* jenis font/tulisan pada website */
+}
+
+/* bagian Judul/Header */
+header {
+    background-color: rgb(156, 41, 20); /* warna latar belakang header*/
+    color: white; /* tulisan header berwarna putih */
+    text-align: center; /* posisi tulisan header ke tengah halaman web */
+    padding: 20px; /* memberi jarak agar kotak judul besar dan terlihat */
+}
+
+/* bagian Menu (Navigation) */
+nav {
+    background-color: black; /* warna latar belakang navigasi */
+    text-align: center; /*posisi tulisan navigasi ke tengah halaman web */
+    padding: 15px; /*memberi jarak di kotak navigasi */
+}
+
+/* setting jarak dan warna teks link di dalam menu */
+nav a {
+    color: white; /* warna tulisan link di navigasi */
+    margin: 15px; /* jarak antar tulisan menu di navigasi */
+}
+
+/* bagian isi profile mahasiswa (Article) */
+article {
+    background-color: white; /* warna latar belakang bagian artikel */
+    padding: 20px; /* jarak teks dengan batas tepi kotak dalam/backgorund profile */
+    margin: 20px; /* jarak kotak dengan tepi layar luar */
+}
+
+/* bagian Footer */
+footer {
+    background-color: black; /* warna latar belakang footer */
+    color: white; /* warna tulisan footer */
+    text-align: center; /* posisi tulisan footer ke tengah halaman web */
+    padding: 15px; /* memberi jarak di kotak footer */
+}
+
+/* desain kartu profil */
+.profile-card {
+    display: flex; /* aktifkan flexbox */
+    flex-direction: column; /* elemen ditampilkan ke bawah untuk mobile */
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* efek bayangan */
+    margin-bottom: 25px;
+    gap: 20px; /* jarak antara foto dan teks */
+}
+
+/* desain foto profil */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* membuat foto menjadi bulat */
+    object-fit: cover; /* mencegah foto biar tidak nge stretch */
+    border: 4px solid rgb(156, 41, 20);
+}
+
+.profile-info {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .profile-card {
+        flex-direction: row; /* ubah susunan menjadi menyamping */
+        text-align: left;
+    }
+    
+    .profile-info {
+        text-align: left; /* teks rata kiri menyampingi foto */
+    }
+}
+
+@media (min-width: 1024px) {
+    .profile-card {
+        padding: 40px;
+        max-width: 800px;
+        margin: 0 auto 30px auto; /* kartu profil dilock agar ditengah layar besar */
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+}
